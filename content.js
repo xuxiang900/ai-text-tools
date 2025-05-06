@@ -222,12 +222,14 @@ async function sendRequest(action, text) {
 		case "translate":
 		prompt = `请根据文本内容的语种进行翻译，如果文本不是中文，则翻译成中文，如果是中文，则翻译成英文。
 		要遵循信达雅的翻译原则，让翻译后的内容读起来符合说目标语种人的日常表达习惯。
-		仅返回翻译后的内容。下面是要翻译的文本: 
-		${text} 
-		输出格式： 
+		输出格式：
+		
 		**{{原文语种}} → {{目标语种}}** 
 		
-		{{翻译结果}}`;
+		{{翻译结果}}
+		
+		仅返回翻译后的内容。下面是要翻译的文本: 
+		${text}`;
 		break;
 		case "explain": prompt = `请解释什么是 “${text}”`; break;
 		case "ask": prompt = `请从专业的角度解答问题: ${text}`; break;
