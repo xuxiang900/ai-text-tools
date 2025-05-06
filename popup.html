@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 助手工具条</title>
+    <style>
+        body { 
+			width: 250px; 
+			padding: 10px; 
+			font-family: Arial, sans-serif; 
+			text-align: left; 
+			}
+        button#toggleDisable,
+		button#openSettings{ 
+			 
+			color: white; 
+			border: none; 
+			padding: 10px; 
+			margin: 5px; 
+			cursor: pointer; 
+			border-radius: 5px; 
+			}
+			
+		button#toggleDisable{
+			background-color: #FF4C4C;
+		}
+        button#toggleDisable:hover { 
+			background-color: #D43F3F; 
+			}
+			
+		button#openSettings{
+			background-color: #4CAF50;
+		}
+    </style>
+</head>
+<body>
+    <h2>🔧 AI 助手工具条</h2>
+	<button id="openSettings">⚙️ 打开设置</button>
+    <p></p>
+    <p id="status">当前网页: <span id="currentUrl">加载中...</span></p>
+    <button id="toggleDisable">🚫 此网站上禁用</button>
+    <script src="popup.js"></script>
+</body>
+</html>
